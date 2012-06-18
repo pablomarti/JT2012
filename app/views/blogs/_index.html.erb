@@ -1,0 +1,9 @@
+<div>
+	<%= render :partial => "post", :collection => @blogs %>
+
+	<% if have_access %>
+		<div class="centered main_item">
+		  <%= link_to 'New Post', new_blog_path, :class => "white_link" %>
+		</div>
+	<% end %>
+</div>

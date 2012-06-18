@@ -1,0 +1,31 @@
+<div class="cborder centered main_item white_background">
+  <div class="internal">
+    <div class="title">
+      Login
+    </div>
+
+    <div>
+		<%= form_tag "/auth" do %>
+		  <div class="field">
+		    <%= label_tag :user %><br />
+		    <%= text_field_tag :email %>
+		  </div>
+
+		  <div class="field">
+		    <%= label_tag :password %><br />
+		    <%= password_field_tag :password %>
+		  </div>
+
+		  <div class="actions">
+		    <%= submit_tag "Login" %>
+		  </div>
+		<% end %>
+    </div>
+  </div>
+</div>
+
+<% if @message != "" %>
+<script>
+alert("<%= @message %>");
+</script>
+<% end %>

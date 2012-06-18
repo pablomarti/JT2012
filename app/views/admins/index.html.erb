@@ -1,0 +1,33 @@
+<div class="cborder centered main_item white_background">
+  <div class="internal">
+    <div class="title">
+      Admins
+    </div>
+
+    <div>
+      <table>
+        <tr>
+          <th>User</th>
+          <th></th>
+          <th></th>
+        </tr>
+
+      <% @admins.each do |admin| %>
+        <tr>
+          <td><%= admin.email %></td>
+          <td><%= link_to 'Edit', edit_admin_path(admin) %></td>
+          <% if admin.id != 1 %>
+            <td><%= link_to 'Remove', admin, confirm: 'Are you sure you want to remove this admin?', method: :delete %></td>
+          <% else %>
+            <td></td>
+          <% end %>
+        </tr>
+      <% end %>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="centered main_item">
+  <%= link_to 'New Admin', new_admin_path, :class => "white_link" %>
+</div>

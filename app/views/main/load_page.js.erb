@@ -1,0 +1,21 @@
+$fe = $("#main_content").children(":first")
+$se = $("<%=j render @partial_name %>");
+$se.css("display", "none");
+$("#main_content").append($se);
+$se.slideDown({
+	duration:500
+});
+$fe.slideUp({
+	duration:500,
+	complete:function(){
+		$fe.remove();
+	}
+});
+
+<% if @pop == 0 %>
+data = {
+	name: "<%= @partial_name %>",
+	url: "/<%= @partial_name %>"
+}
+history.pushState(data, "<%= @partial_name %>", "/<%= @partial_name %>");
+<% end %>

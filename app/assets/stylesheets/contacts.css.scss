@@ -1,0 +1,28 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#form_contact{
+
+	.field{
+		margin:5px 0px 5px 0px;
+	}
+	
+	.text{
+		width:350px;
+		height:24px;
+	}
+
+	.mobile{
+		width:200px;
+		height:24px;
+	}
+
+	select{
+		width:146px;
+	}
+
+	textarea{
+		width:350px;
+		height:200px;
+	}
+}

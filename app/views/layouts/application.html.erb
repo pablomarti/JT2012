@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	  <title>Juntos - Together::LUX</title>	  
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+
+	  <script>
+	 		use_remote = "<%= use_remote ? 'true' : 'false' %>";
+	  </script>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="header">
+				<div class="header_container">
+					<div class="logo left">
+						<%= link_to image_tag("logo.png"), init_path, :remote => use_remote %>
+					</div>
+
+					<div class="dmenu left">
+						<div class="dmenu_helper">
+							<ul class="menu">
+								<li class="first">
+									<%= link_to I18n.t('menu.home'), init_path, :class => "menu", :remote => use_remote %>
+								</li>
+								<li class="other">
+									<%= link_to I18n.t('menu.about'), about_path, :class => "menu", :remote => use_remote %>
+								</li>
+								<li class="other">
+									<%= link_to I18n.t('menu.lux'), lux_path, :class => "menu", :remote => use_remote %>
+								</li>
+								<li class="other">
+									<%= link_to I18n.t('menu.blog'), blogs_path, :class => "menu", :remote => use_remote %>
+								</li>
+								<li class="last">
+									<%= link_to I18n.t('menu.contact'), contact_path, :class => "menu", :remote => use_remote %>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sm right">
+						<ul>
+							<li class="sm">
+								<a href="#"><%= image_tag "fb.png" %></a>
+							</li>
+							
+							<li class="sm">
+								<a href="#"><%= image_tag "tw.png" %></a>
+							</li>
+
+							<li class="sm">
+								<a href="#"><%= image_tag "yt.png" %></a>
+							</li>						
+						</ul>
+					</div>
+
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="main_content">
+				<%= yield %>
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div class="footer centered main_item">
+  				<%= link_to 'Juntos - Together 2012', init_path, :class => "white_link", :target => "_blank" %>
+  				<span class="white_dash">-</span>
+  				<%= link_to 'Vida Nueva El Salvador', "http://www.ibvn.org/", :class => "white_link", :target => "_blank" %>
+			</div>
+		</div>
+	</body>
+</html>

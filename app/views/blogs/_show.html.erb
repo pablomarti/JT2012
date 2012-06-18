@@ -1,0 +1,29 @@
+<div>
+	<div class="cborder centered main_item white_background">
+	  <div class="internal">
+	    <div class="title">
+	      <%= @blog.title %>
+	    </div>
+
+	    <div>
+	    	<%= @blog.content %>
+	    </div>
+
+	    <% if !@blog.flickr.nil? && @blog.flickr != "" %>
+		    <div class="slider">
+		    	<%= raw @blog.flickr %>
+		    </div>
+		<% end %>
+	  </div>
+	</div>
+
+	<% if have_access(@blog.admin_id) %>
+	  <div class="centered main_item">
+	    <%= link_to 'Edit', edit_blog_path(@blog), :class => "white_link" %>
+	    <span class="white_dash">&nbsp;-&nbsp;</span>
+	    <%= link_to 'Remove', @blog, confirm: 'Are you sure you want to remove this post?', method: :delete, :class => "white_link" %>
+	    <span class="white_dash">&nbsp;-&nbsp;</span>
+	    <%= link_to 'Back', blogs_path, :class => "white_link" %>
+	  </div>
+	<% end %>
+</div>
