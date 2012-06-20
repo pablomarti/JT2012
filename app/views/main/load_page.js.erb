@@ -2,7 +2,8 @@ $fe = $("#main_content").children(":first")
 $se = $("<%=j render @partial_name %>");
 $se.css("display", "none");
 $("#main_content").append($se);
-$se.slideDown({
+
+/*$se.slideDown({
 	duration:500
 });
 $fe.slideUp({
@@ -10,7 +11,10 @@ $fe.slideUp({
 	complete:function(){
 		$fe.remove();
 	}
-});
+});*/
+
+$fe.slideLeftHide($se);
+//$se.slideRightShow();
 
 <% if @pop == 0 %>
 data = {
