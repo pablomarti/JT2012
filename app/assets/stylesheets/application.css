@@ -187,7 +187,7 @@ div.sm{
 
 li.sm{
 	display:inline-block;
-	margin-left:10px;
+	margin-left:5px;
 }
 
 .cborder{
@@ -242,4 +242,9 @@ a.white_link{
 a.white_link:hover{
 	color:#EFDD8D;
 	font-size:14px;
+}
+
+a.mini_link{
+	font-size:10px;
+	color:#FFFFFF;
 }

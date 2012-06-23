@@ -29,6 +29,8 @@ class ApplicationController < ActionController::Base
       session[:lang] = "es"
     end
     I18n.locale = session[:lang]
+
+    @new_lang = (session[:lang] == "es") ? "en" : "es"
   end
 
   def use_remote

@@ -17,6 +17,7 @@
 				<div class="header_container">
 					<div class="logo left">
 						<%= link_to image_tag("logo.png"), init_path, :remote => use_remote %>
+						<%= link_to @new_lang.upcase, change_lang_path(@new_lang), :class => "mini_link" %>
 					</div>
 
 					<div class="dmenu left">
@@ -44,16 +45,16 @@
 					<div class="sm right">
 						<ul>
 							<li class="sm">
-								<a href="#"><%= image_tag "fb.png" %></a>
+								<a href="https://www.facebook.com/juntostogether" target="_BLANK"><%= image_tag "fb.png" %></a>
 							</li>
 							
 							<li class="sm">
-								<a href="#"><%= image_tag "tw.png" %></a>
+								<a href="https://twitter.com/#!/Juntos_Together" target="_BLANK"><%= image_tag "tw.png" %></a>
 							</li>
 
 							<li class="sm">
-								<a href="#"><%= image_tag "yt.png" %></a>
-							</li>						
+								<a href="http://www.youtube.com/user/juntostogether" target="_BLANK"><%= image_tag "yt.png" %></a>
+							</li>					
 						</ul>
 					</div>
 

@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require_tree .
  
+
+/***************************  History API ********************************/
 var use_remote = true;
 
 var addEvent = (function () {
@@ -85,3 +87,20 @@ jQuery.fn.extend({
     });
   }
 });
+
+
+/***************************  Load lights ********************************/
+
+function load_lights(){
+  load_light([3, 5, 1, 4, 0, 2]);
+}
+
+function load_light(indexes){
+  if(indexes.length > 0){
+    var index = indexes.pop();
+    $("#lights_container div:eq(" + index + ") a img").fadeIn(500, function(){
+      //$("#lights_container div:eq(" + index + ") a.light img").trigger('hover');
+      load_light(indexes);
+    });
+  }
+}
