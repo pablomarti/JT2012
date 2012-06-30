@@ -1,6 +1,21 @@
 <div class="cborder centered main_item white_background">
 	<div class="internal">
-		<h1>Main#lux</h1>
-		<p>Find me in app/views/main/about.html.erb</p>
+		<div class="title">			
+      		<%= I18n.t('menu.lux') %>
+		</div>
+
+		<div class="internal_child">
+			<div class="d720">
+				<iframe width="720" height="431" src="http://www.ustream.tv/embed/11410142" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>
+			</div>
+
+			<div>
+				<br />
+				<%= sanitize I18n.t('lux.content') %>
+			</div>
+
+			<div class="clear">
+			</div>
+		</div>
 	</div>
 </div>
