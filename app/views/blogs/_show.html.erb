@@ -6,7 +6,7 @@
 	    </div>
 
 	    <div>
-	    	<%= @blog.content %>
+	    	<%= raw @blog.content %>
 	    </div>
 
 	    <% if !@blog.flickr.nil? && @blog.flickr != "" %>

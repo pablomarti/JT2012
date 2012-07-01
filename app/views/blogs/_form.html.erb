@@ -13,27 +13,27 @@
 
   <div class="field">
     <%= f.label "Spanish title" %><br />
-    <%= f.text_field :title_es %>
+    <%= f.text_field :title_es %><br /><br />
   </div>
 
   <div class="field">
     <%= f.label "English title" %><br />
-    <%= f.text_field :title_en %>
+    <%= f.text_field :title_en %><br /><br />
   </div>
 
   <div class="field">
     <%= f.label "Spanish description" %><br />
-    <%= f.text_area :content_es %>
+    <%= f.text_area :content_es, :class => "blog_content" %><br /><br />
   </div>
 
   <div class="field">
     <%= f.label "English description" %><br />
-    <%= f.text_area :content_en %>
+    <%= f.text_area :content_en, :class => "blog_content" %><br /><br />
   </div>
 
   <div class="field">
     <%= f.label "Flickr" %><br />
-    <%= f.text_area :flickr %>
+    <%= f.text_area :flickr, :class => "flickr_content" %><br /><br />
   </div>
 
   <div class="actions">
@@ -41,3 +41,15 @@
   </div>
   
 <% end %>
+
+<script>
+$(document).ready(function() {
+    $(".blog_content").cleditor({
+          width:        750,
+          height:       400,
+          controls:     "bold italic underline strikethrough | font size " +
+                        "style | color highlight removeformat | bullets numbering | outdent " +
+                        "indent | alignleft center alignright justify | link unlink"
+    });
+});
+</script>
