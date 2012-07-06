@@ -8,11 +8,19 @@
 
 .i_internal{
 	width:850px;
-	min-height:480px;
+	min-height:460px;
 	height:auto;
 	margin:0px auto 0px auto;
 	padding:0px 0px 0px 0px;
 	vertical-align:top;
+	background:blue;
+}
+
+.light_message{
+	width:850px;
+	height:30px;
+	margin:0px auto 0px auto;
+	background:red;
 }
 
 a.light img {
