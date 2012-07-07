@@ -23,7 +23,15 @@ es:
    content: "Juntos together es una una conferencia juvenil bilingüe (inglés-español) a donde jóvenes universitarios salvadoreños comparten una experiencia inolvidable junto a otros jóvenes de los Estados Unidos.<br /><br />Es un evento emocionante con muchos retos, con un enfoque espiritual, evangelístico y de convivencia bicultural, que tiene como propósito intercambiar experiencias, pasar un buen tiempo juntos, sirviendo y aprendiendo de nuestro Rey.<br/><br/>La actividad es desarrollada en una semana llena de mucho entusiasmo, durante el día se visitan diferentes escuelas, universidades, asilos u orfanatos para compartir sobre Jesús y luego en las noches hay un servicio especial con música en vivo para alabar y adorar al Rey, una buena producción y un desafío de la biblia para cada joven.<br /><br />Juntos Together “Lux” 2012 será una nueva aventura espectacular que promete ser de mucho aprendizaje y sorpresas.<br /><br />No dejes pasar la bendición de servir a Dios en esta oportunidad del 9 al 15 de julio en Iglesia Bautista Vida Nueva.<br /><br />Acá compartimos la experiencia que marcó la vida de muchos jóvenes en Juntos Together “Radical” 2011"
   
   lux:
-   content: "(Aqui ira la lista de actividades)"
+   content: "Estas son las actividades principales que se estaran desarrollando durante la semana:"
+   item1: "Lunes: Apertura -- Lux (Siendo luz, por Jeff)"
+   item2: "Martes: Poder (Viviendo por el poder de Dios, por Jeff)"
+   item3: "Miércoles: Campaña Evangelistica"
+   item4: "Jueves: Lo que significa ser un misionero (por Steve)"
+   item5: "Viernes: Campaña Evangelistica"
+   item6: "Sábado: Fun Day!"
+   item7: "Domingo: Surrender (Rendición total a misiones, por Jeff)"
+   footer: "Y si no puedes acompañarnos, puedes seguir todo el evento aca:"
   
   messages:
    light1: "Ven y ve el video de Juntos Together 2012"
