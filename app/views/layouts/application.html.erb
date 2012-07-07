@@ -27,16 +27,16 @@
 									<%= link_to I18n.t('menu.home'), init_path, :class => "menu", :remote => use_remote %>
 								</li>
 								<li class="other">
-									<%= link_to I18n.t('menu.about'), about_path, :class => "menu", :remote => use_remote %>
+									<%= link_to I18n.t('menu.about'), about_path, :class => "menu", :id => "about_link", :remote => use_remote %>
 								</li>
 								<li class="other">
-									<%= link_to I18n.t('menu.lux'), lux_path, :class => "menu", :remote => use_remote %>
+									<%= link_to I18n.t('menu.lux'), lux_path, :class => "menu", :id => "lux_link", :remote => use_remote %>
 								</li>
 								<li class="other">
-									<%= link_to I18n.t('menu.blog'), blogs_path, :class => "menu", :remote => use_remote %>
+									<%= link_to I18n.t('menu.blog'), blogs_path, :class => "menu", :id => "blog_link", :remote => use_remote %>
 								</li>
 								<li class="last">
-									<%= link_to I18n.t('menu.contact'), contact_path, :class => "menu", :remote => use_remote %>
+									<%= link_to I18n.t('menu.contact'), contact_path, :class => "menu", :id => "contact_link", :remote => use_remote %>
 								</li>
 							</ul>
 						</div>
@@ -45,7 +45,7 @@
 					<div class="sm right">
 						<ul>
 							<li class="sm">
-								<a href="https://www.facebook.com/juntostogether" target="_BLANK"><%= image_tag "fb.png" %></a>
+								<a href="https://www.facebook.com/juntostogether" id="facebook_link"><%= image_tag "fb.png" %></a>
 							</li>
 							
 							<li class="sm">

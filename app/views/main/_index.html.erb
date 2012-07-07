@@ -2,27 +2,27 @@
 	<div class="i_centered">
 		<div class="i_internal" id="lights_container">
 			<div class="left">
-				<%= link_to image_tag("lights/1.png"), "#", :class => "light" %>
+				<%= link_to image_tag("lights/1.png"), "#", :class => "light", :id => "l1" %>
 			</div>
 
 			<div class="left move_image">
-				<%= link_to image_tag("lights/2.png"), "#", :class => "light" %>
+				<%= link_to image_tag("lights/2.png"), "#", :class => "light", :id => "l2" %>
 			</div>
 
 			<div class="left move_image">
-				<%= link_to image_tag("lights/3.png"), "#", :class => "light" %>
+				<%= link_to image_tag("lights/3.png"), "#", :class => "light", :id => "l3" %>
 			</div>
 
 			<div class="left move_image">
-				<%= link_to image_tag("lights/4.png"), "#", :class => "light" %>
+				<%= link_to image_tag("lights/4.png"), "#", :class => "light", :id => "l4" %>
 			</div>
 
 			<div class="left move_image">
-				<%= link_to image_tag("lights/5.png"), "#", :class => "light" %>
+				<%= link_to image_tag("lights/5.png"), "#", :class => "light", :id => "l5" %>
 			</div>
 
 			<div class="left move_image">
-				<%= link_to image_tag("lights/6.png"), "#", :class => "light" %>
+				<%= link_to image_tag("lights/6.png"), "#", :class => "light", :id => "l6" %>
 			</div>
 
 			<div class="clear">
@@ -36,6 +36,34 @@
 	<script>
 		$(document).ready(function(){
 			load_lights();
+
+			hover_manager("l1", "<%= I18n.t('messages.light1') %>");
+			hover_manager("l2", "<%= I18n.t('messages.light2') %>");
+			hover_manager("l3", "<%= I18n.t('messages.light3') %>");
+			hover_manager("l4", "<%= I18n.t('messages.light4') %>");
+			hover_manager("l5", "<%= I18n.t('messages.light5') %>");
+			hover_manager("l6", "<%= I18n.t('messages.light6') %>");
+
+			$("#l1").colorbox({html:'<div class="black_box"><iframe src="http://player.vimeo.com/video/43412566?byline=0&amp;portrait=0" width="600" height="388" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>'});
+
+			$("#l2").click(function(){
+				$("#about_link").click();
+			});
+
+			$("#l3").click(function(){
+				$("#lux_link").click();
+			});
+
+			$("#l4").click(function(){
+				$("#blog_link").click();
+			});
+
+			$("#l5").click(function(){
+				$("#contact_link").click();
+			});
+
+			$("#l6").colorbox({html:'<div class="black_box"><iframe width="600" height="388" src="http://www.youtube.com/embed/npzQjmyWuCU" frameborder="0" allowfullscreen></iframe></div>'});
+
 		});
 	</script>
 </div>

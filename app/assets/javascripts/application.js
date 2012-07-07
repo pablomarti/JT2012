@@ -104,3 +104,14 @@ function load_light(indexes){
     });
   }
 }
+
+function hover_manager(id, message){
+  $("#" + id).hover(
+    function(){
+      $(".light_message").text(message);
+    },
+    function(){
+      $(".light_message").text(""); 
+    }
+  );      
+}
